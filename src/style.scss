@@ -1,0 +1,48 @@
+$galactic-blue: #755cde;
+$summer-yellow: #f6a560;
+$medium-brown: #7a746e;
+$light-cream: #fff7f0;
+$light-red: #eb7565;
+$purple: #552049;
+$black: #030303;
+$pink: #f39e9e;
+$cyan: #61c4b7;
+
+@mixin font-base($size, $height, $weight, $color) {
+  font-family: 'Plus Jakarta Sans';
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin heading-large {
+  @include font-base(56px, 70px, bold, $black);
+}
+
+@mixin heading-medium {
+  @include font-base(40px, 51px, bold, $black);
+}
+
+@mixin heading-small {
+  @include font-base(32px, 40px, bold, $black);
+}
+
+@mixin body-medium {
+  @include font-base(18px, 28px, medium, $medium-brown);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-cream;
+}
+
+.container {
+  width: 1111;
+  margin: 0 auto;
+}

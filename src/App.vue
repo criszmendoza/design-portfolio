@@ -1,7 +1,7 @@
-<script></script>
-
 <template>
-  <h1>Hola mundo</h1>
+  <h1>Hello World</h1>
 </template>
 
-<style scoped></style>
+<script></script>
+
+<style lang="scss"></style>
