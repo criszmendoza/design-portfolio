@@ -1,50 +1,80 @@
+$black: #030303;
+$cyan: #61c4b7;
 $galactic-blue: #755cde;
-$summer-yellow: #f6a560;
-$medium-brown: #7a746e;
 $light-cream: #fff7f0;
 $light-red: #eb7565;
-$purple: #552049;
-$black: #030303;
+$medium-brown: #7a746e;
 $pink: #f39e9e;
-$cyan: #61c4b7;
+$purple: #552049;
+$summer-yellow: #f6a560;
 
 @mixin font-base($size, $height, $weight, $color) {
-  font-family: 'Plus Jakarta Sans';
   color: $color;
-  font-weight: $weight;
+  font-family: 'Plus Jakarta Sans';
   font-size: $size;
+  font-weight: $weight;
   line-height: $height;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @mixin heading-large {
   @include font-base(56px, 70px, bold, $black);
+  @media (max-width: 1024px) {
+    font-size: 44px;
+    line-height: 45.36px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 }
 
 @mixin heading-medium {
   @include font-base(40px, 51px, bold, $black);
+  @media (max-width: 1024px) {
+    font-size: 32px;
+  }
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
 }
 
 @mixin heading-small {
   @include font-base(32px, 40px, bold, $black);
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 @mixin body-medium {
   @include font-base(18px, 28px, medium, $medium-brown);
 }
 
-* {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  margin-top: 32px;
-  margin-bottom: 64px;
   background-color: $light-cream;
+  margin-bottom: 64px;
+  margin-top: 32px;
 }
 
 .container {
-  width: 1111px;
   margin: 0 auto;
+  max-width: 1111px;
+  min-width: 343px;
+  width: 77.15%;
+
+  @media (max-width: 768px) {
+    max-width: 89.71%;
+  }
 }

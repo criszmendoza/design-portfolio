@@ -7,14 +7,14 @@
 
 <style lang="scss" scoped>
 .nav-bar {
-  height: 64px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
 
   &__icon {
-    width: 64px;
     height: 64px;
+    width: 64px;
   }
 }
 </style>

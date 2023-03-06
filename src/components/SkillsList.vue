@@ -58,5 +58,28 @@ export default {
   grid-template-areas:
     'graphic-design graphic-design ui-ux apps photography photography'
     'graphic-design graphic-design illustrations illustrations motion-graphics motion-graphics';
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 570px;
+    grid-template-areas:
+      'graphic-design graphic-design ui-ux apps'
+      'graphic-design graphic-design illustrations illustrations'
+      'photography photography  motion-graphics motion-graphics';
+  }
+
+  @media (max-width: 628px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 1164px;
+    grid-template-areas:
+      'graphic-design graphic-design'
+      'graphic-design graphic-design'
+      'ui-ux apps'
+      'illustrations illustrations'
+      'photography photography'
+      'motion-graphics motion-graphics';
+  }
 }
 </style>

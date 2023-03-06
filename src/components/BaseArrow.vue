@@ -27,12 +27,12 @@ export default {
 @import '../style.scss';
 
 .arrow {
-  width: 64px;
-  height: 64px;
   background-color: $black;
-  border: none;
   border-radius: 50%;
+  border: none;
+  height: 64px;
   transition: background-color 0.3s;
+  width: 64px;
 
   &:hover {
     background-color: $galactic-blue;

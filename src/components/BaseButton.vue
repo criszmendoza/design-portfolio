@@ -22,13 +22,15 @@ export default {
 @import '../style.scss';
 
 .button {
-  width: 228px;
-  height: 56px;
-  border: none;
-  font-size: 16px;
   border-radius: 28px;
+  border: none;
   color: $light-cream;
+  font-size: 16px;
+  height: 56px;
+  min-height: 56px;
+  min-width: 228px;
   transition: background-color 0.3s;
+  width: 228px;
 }
 
 .primary {

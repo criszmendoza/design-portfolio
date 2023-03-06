@@ -40,13 +40,13 @@ export default {
   padding: 24px;
 
   &__title {
-    font-family: Plus Jakarta Sans;
+    font-family: 'Plus Jakarta Sans';
     font-size: 24px;
     font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0px;
-    text-align: left;
     justify-self: end;
+    letter-spacing: 0px;
+    line-height: 30px;
+    text-align: left;
   }
 
   &__icon {
@@ -54,7 +54,6 @@ export default {
   }
 }
 .small {
-  width: 164px;
   border-radius: 8px;
   .skill__icon {
     width: 64px;
@@ -62,16 +61,6 @@ export default {
   }
 }
 .medium {
-  width: 354px;
-  border-radius: 8px;
-  .skill__icon {
-    width: 128px;
-    height: 64px;
-  }
-}
-
-.medium-big {
-  width: 354px;
   border-radius: 8px;
   .skill__icon {
     width: 128px;
@@ -79,13 +68,13 @@ export default {
   }
 }
 .big {
-  width: 354px;
   border-radius: 8px;
   .skill__icon {
-    width: 128px;
     height: 192px;
+    width: 128px;
   }
 }
+
 .graphic-design {
   background-color: $galactic-blue;
   grid-area: graphic-design;

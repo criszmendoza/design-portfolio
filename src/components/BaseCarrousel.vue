@@ -49,12 +49,17 @@ export default {
 <style lang="scss" scoped>
 .carrousel {
   &__items {
-    margin-top: 56px;
     display: grid;
+    gap: 30px;
     grid-auto-flow: column;
-    scroll-behavior: auto;
-    gap: 1.2rem;
+    margin-top: 56px;
     overflow: hidden;
+    scroll-behavior: auto;
+
+    @media (max-width: 375px) {
+      gap: 15px;
+      margin-top: 42px;
+    }
   }
 
   &__controls {
@@ -66,9 +71,13 @@ export default {
   }
 }
 
-.card {
+.card img {
+  height: 360px;
   width: 540px;
-  height: 360px;
-  height: 360px;
+
+  @media (max-width: 375px) {
+    height: 180px;
+    width: 270px;
+  }
 }
 </style>

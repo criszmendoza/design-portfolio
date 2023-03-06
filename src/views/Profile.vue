@@ -1,9 +1,9 @@
 <template>
   <nav-bar />
-  <description />
+  <the-description />
   <skills-list />
-  <hero />
+  <the-hero />
   <my-work />
+  <the-banner />
+  <nav-bar />
 </template>
-
-<style lang="scss" scoped></style>
