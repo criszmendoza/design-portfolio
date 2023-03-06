@@ -6,6 +6,7 @@
         :title="skill.title"
         :key="skill.title"
         :size="skill.size"
+        :img="skill.img"
       />
     </div>
   </section>
@@ -19,26 +20,32 @@ export default {
         {
           title: 'Graphic Design',
           size: 'big',
+          img: '/pattern-graphic-design.svg',
         },
         {
           title: 'UI/UX',
           size: 'small',
+          img: '/pattern-ui-ux.svg',
         },
         {
           title: 'Apps',
           size: 'small',
+          img: '/pattern-apps.svg',
         },
         {
           title: 'Photography',
           size: 'medium',
+          img: '/pattern-photography.svg',
         },
         {
           title: 'Illustrations',
           size: 'medium',
+          img: '/pattern-illustrations.svg',
         },
         {
           title: 'Motion Graphics',
           size: 'medium',
+          img: '/pattern-motion-graphics.svg',
         },
       ],
     };

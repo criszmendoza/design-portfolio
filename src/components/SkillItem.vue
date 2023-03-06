@@ -1,6 +1,6 @@
 <template>
   <div class="skill" :class="[size, name]">
-    <img :src="srcImg" :alt="title" class="skill__icon" />
+    <img :alt="title" class="skill__icon" :src="img" />
     <p class="skill__title">{{ title }}</p>
   </div>
 </template>
@@ -9,6 +9,10 @@
 export default {
   props: {
     title: {
+      type: String,
+      required: true,
+    },
+    img: {
       type: String,
       required: true,
     },
@@ -22,9 +26,6 @@ export default {
   computed: {
     name() {
       return this.title.replace(' ', '-').replace('/', '-').toLowerCase();
-    },
-    srcImg() {
-      return `/src/assets/pattern-${this.name}.svg`;
     },
   },
 };

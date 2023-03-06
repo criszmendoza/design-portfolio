@@ -1,7 +1,7 @@
 <template>
   <section class="hero container">
     <div class="hero__img">
-      <img src="../assets/image-amy.webp" />
+      <img src="@/assets/image-amy.webp" />
     </div>
 
     <div class="hero__description">

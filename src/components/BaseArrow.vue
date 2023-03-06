@@ -1,6 +1,15 @@
 <template>
   <button class="arrow" @click="$emit('action')">
-    <img :src="srcImg" alt="Arrow" />
+    <img
+      v-if="direction === 'left'"
+      src="@/assets/icon-arrow-left.svg"
+      alt="Arrow"
+    />
+    <img
+      v-if="direction === 'right'"
+      src="@/assets/icon-arrow-right.svg"
+      alt="Arrow"
+    />
   </button>
 </template>
 
@@ -13,11 +22,6 @@ export default {
       validator(value) {
         return ['right', 'left'].includes(value);
       },
-    },
-  },
-  computed: {
-    srcImg() {
-      return `src/assets/icon-arrow-${this.direction}.svg`;
     },
   },
 };
