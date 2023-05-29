@@ -3,14 +3,13 @@
 
 # Portfolio con Vue y Vite
 
-Este es mi portfolio personal creado con Vue.js y Vite. Aquí presento una lista de mis proyectos y habilidades para mostrar mi experiencia en desarrollo web.
+Este es un portfolio personal creado con Vue.js y Vite. Aquí presento una lista de mis proyectos y habilidades para mostrar mi experiencia en desarrollo web.
 
 ## Características
 
 - Diseño y desarrollo responsivo.
 - Interfaz de usuario intuitiva y fácil de usar.
 - Uso de tecnologías modernas como Vue.js y Vite.
-- Incorporación de animaciones y efectos visuales.
 
 ## Instalación
 
